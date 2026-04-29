@@ -1,0 +1,257 @@
+/* =============================================
+   IMPORTAR FUENTE DE GOOGLE (Clase 3 - Tipografía)
+   ============================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/* =============================================
+   RESET Y BASE
+   ============================================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;           /* Unidad relativa - Clase 4 */
+    background-color: #f4f6f8;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* =============================================
+   IMÁGENES ADAPTABLES (Clase 4 - Responsive)
+   ============================================= */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* =============================================
+   HEADER (Flexbox - Clase 4)
+   ============================================= */
+header {
+    background-color: #1a1a2e;   /* Azul oscuro - transmite confianza y profesionalismo */
+    color: #ffffff;
+    padding: 1.5rem 2rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2rem;             /* Unidad relativa rem - Clase 4 */
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #e0e0e0;
+}
+
+header .subtitulo {
+    font-size: 1rem;
+    color: #a0a8c0;
+    margin-top: 0.3rem;
+    margin-bottom: 1rem;
+}
+
+/* =============================================
+   NAVEGACIÓN (Flexbox - Clase 4)
+   ============================================= */
+nav ul {
+    list-style: none;
+    display: flex;               /* FLEXBOX - Clase 4 */
+    justify-content: center;     /* justify-content - Clase 4 */
+    gap: 1rem;
+    flex-wrap: wrap;             /* flex-wrap - Clase 4 */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #16213e;
+    padding: 0.5rem 1.2rem;
+    border-radius: 25px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+nav ul li a:hover {
+    background-color: #e94560;   /* Rojo/coral - dinamismo */
+}
+
+/* =============================================
+   CONTENEDOR PRINCIPAL (Flexbox - Clase 4)
+   ============================================= */
+.contenedor {
+    display: flex;               /* FLEXBOX - Clase 4 */
+    flex-direction: column;      /* flex-direction - Clase 4 */
+    align-items: center;         /* align-items - Clase 4 */
+    gap: 2rem;
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* =============================================
+   SECCIONES / BLOQUES (Gestalt proximidad - Clase 5)
+   ============================================= */
+.bloque {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border-left: 5px solid #e94560;  /* Principio figura-fondo - Clase 5 */
+}
+
+.bloque h2 {
+    font-size: 1.4rem;
+    color: #1a1a2e;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.bloque p {
+    font-size: 1rem;
+    color: #555555;
+    margin-bottom: 0.8rem;
+}
+
+.bloque ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bloque ul li {
+    padding: 0.4rem 0;
+    color: #555555;
+    font-size: 1rem;
+    padding-left: 1.2rem;
+    position: relative;
+}
+
+.bloque ul li::before {
+    content: "▸";
+    position: absolute;
+    left: 0;
+    color: #e94560;
+}
+
+/* =============================================
+   PERFIL E IMAGEN
+   ============================================= */
+.perfil {
+    text-align: center;
+}
+
+.infografia-container {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.infografia {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+/* =============================================
+   FORMULARIO DE CONTACTO
+   ============================================= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+form label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+form input,
+form textarea {
+    padding: 0.7rem 1rem;
+    border: 2px solid #d0d0d0;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #e94560;
+    outline: none;
+}
+
+form button {
+    padding: 0.8rem 2rem;
+    background-color: #e94560;
+    color: #ffffff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+form button:hover {
+    background-color: #1a1a2e;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+    background-color: #1a1a2e;
+    color: #a0a8c0;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+/* =============================================
+   MEDIA QUERIES - RESPONSIVE (Clase 4 y 5)
+   @media max-width para móviles
+   ============================================= */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header .subtitulo {
+        font-size: 0.9rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contenedor {
+        padding: 0 1rem;
+        margin: 1rem auto;
+    }
+
+    .bloque {
+        padding: 1.2rem;
+    }
+
+    .bloque h2 {
+        font-size: 1.2rem;
+    }
+
+    form button {
+        align-self: stretch;
+    }
+}
